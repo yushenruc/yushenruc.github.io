@@ -1,0 +1,104 @@
+baseurl = "https://example.com/"
+languageCode = "en"
+title = "Yushenruc's Website"
+theme = "soho"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+summarylength = 10
+enableEmoji = true
+paginate = 5
+ignoreErrors = ["error-remote-getjson"]
+
+[params]
+title = "Soho Theme"
+description = "这是我的个人主页"
+# gravatar = "soho@example.com"
+images = ["profile.png"]
+profilePicture = "profile.png"
+copyright = "Yushenruc"
+license = "CC BY-SA 4.0"
+licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+builtWith = false
+mainSections = ["post"]
+
+## Set custom theme color.
+themeColor = "#51449e"
+
+  [[params.socialIcons]]
+  icon = "fa-linkedin"
+  title = "Linkedin"
+  url = "#"
+
+  [[params.socialIcons]]
+  icon = "fa-github"
+  title = "GitHub"
+  url = "https://github.com/alexandrevicenzi/soho"
+
+  [[params.socialIcons]]
+  icon = "fa-twitter"
+  title = "Twitter"
+  url = "#"
+
+[menu]
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 100
+  identifier = "posts"
+  url = "/posts/"
+
+  [[menu.main]]
+  name = "Categories"
+  weight = 200
+  identifier = "categories"
+  url = "/categories/"
+
+  [[menu.main]]
+  name = "Tags"
+  weight = 200
+  identifier = "tags"
+  url = "/tags/"
+
+  [[menu.main]]
+  name = "About"
+  identifier = "about"
+  weight = 10
+  url = "/about/"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # needed to render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+      unsafe = true
