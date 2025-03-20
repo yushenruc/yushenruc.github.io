@@ -1,6 +1,6 @@
 baseurl = "https://example.com/"
 languageCode = "en"
-title = "Yushenruc's Website"
+title = "Shenyu's Website"
 theme = "soho"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
